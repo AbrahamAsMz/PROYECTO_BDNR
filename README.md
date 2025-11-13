@@ -5,3 +5,4 @@ Plataforma de educacion en línea
 Equipo 4
 --------
 * Fabián Patricio Gaxiola Valadés - 754471
+* Sarah Martinez Mora - 740366
