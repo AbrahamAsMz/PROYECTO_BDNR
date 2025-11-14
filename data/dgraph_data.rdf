@@ -1,0 +1,168 @@
+# ---------- USERS ----------
+_:user1 <dgraph.type> "User" .
+_:user1 <name> "Ana Torres" .
+_:user1 <email> "ana.torres@example.com" .
+_:user1 <role> "student" .
+
+_:user2 <dgraph.type> "User" .
+_:user2 <name> "Luis Martínez" .
+_:user2 <email> "luis.martinez@example.com" .
+_:user2 <role> "student" .
+
+_:user3 <dgraph.type> "User" .
+_:user3 <name> "Mariana Rojas" .
+_:user3 <email> "mariana.rojas@example.com" .
+_:user3 <role> "student" .
+
+_:user4 <dgraph.type> "User" .
+_:user4 <name> "Óscar Díaz" .
+_:user4 <email> "oscar.diaz@example.com" .
+_:user4 <role> "student" .
+
+_:user5 <dgraph.type> "User" .
+_:user5 <name> "Abraham Méndez" .
+_:user5 <email> "abraham.mendez@example.com" .
+_:user5 <role> "student" .
+
+
+# ---------- INSTRUCTORS ----------
+_:inst1 <dgraph.type> "Instructor" .
+_:inst1 <name> "Carla Gómez" .
+_:inst1 <email> "carla.gomez@example.com" .
+_:inst1 <role> "instructor" .
+_:inst1 <teaches> _:course1 .
+_:inst1 <teaches> _:course3 .
+_:inst1 <teaches> _:course5 .
+
+_:inst2 <dgraph.type> "Instructor" .
+_:inst2 <name> "Javier Rivera" .
+_:inst2 <email> "javier.rivera@example.com" .
+_:inst2 <role> "instructor" .
+_:inst2 <teaches> _:course2 .
+_:inst2 <teaches> _:course6 .
+
+_:inst3 <dgraph.type> "Instructor" .
+_:inst3 <name> "Luna Ortiz" .
+_:inst3 <email> "luna.ortiz@example.com" .
+_:inst3 <role> "instructor" .
+_:inst3 <teaches> _:course4 .
+
+
+# ---------- COURSES ----------
+_:course1 <dgraph.type> "Course" .
+_:course1 <title> "Introducción a Python" .
+_:course1 <category> "Programación" .
+
+_:course2 <dgraph.type> "Course" .
+_:course2 <title> "Diseño UX/UI Básico" .
+_:course2 <category> "Diseño" .
+
+_:course3 <dgraph.type> "Course" .
+_:course3 <title> "Bases de Datos NoSQL" .
+_:course3 <category> "Data" .
+
+_:course4 <dgraph.type> "Course" .
+_:course4 <title> "Fotografía Creativa" .
+_:course4 <category> "Arte" .
+
+_:course5 <dgraph.type> "Course" .
+_:course5 <title> "Machine Learning Básico" .
+_:course5 <category> "Data" .
+
+_:course6 <dgraph.type> "Course" .
+_:course6 <title> "Animación Digital" .
+_:course6 <category> "Diseño" .
+
+
+# ---------- ENROLLMENTS ----------
+_:enroll1 <dgraph.type> "Enrollment" .
+_:enroll1 <status> "active" .
+_:enroll1 <of_course> _:course1 .
+_:enroll1 <enroll_date> "2024-01-10T10:00:00Z" .
+_:user1 <enrolled_in> _:enroll1 .
+
+_:enroll2 <dgraph.type> "Enrollment" .
+_:enroll2 <status> "completed" .
+_:enroll2 <grade> "8.5" .
+_:enroll2 <of_course> _:course2 .
+_:enroll2 <enroll_date> "2024-02-05T11:30:00Z" .
+_:user1 <enrolled_in> _:enroll2 .
+
+_:enroll3 <dgraph.type> "Enrollment" .
+_:enroll3 <status> "completed" .
+_:enroll3 <grade> "9.8" .
+_:enroll3 <of_course> _:course3 .
+_:enroll3 <enroll_date> "2024-01-20T13:00:00Z" .
+_:user2 <enrolled_in> _:enroll3 .
+
+_:enroll4 <dgraph.type> "Enrollment" .
+_:enroll4 <status> "completed" .
+_:enroll4 <grade> "7.9" .
+_:enroll4 <of_course> _:course4 .
+_:enroll4 <enroll_date> "2024-03-01T09:45:00Z" .
+_:user2 <enrolled_in> _:enroll4 .
+
+_:enroll5 <dgraph.type> "Enrollment" .
+_:enroll5 <status> "active" .
+_:enroll5 <of_course> _:course5 .
+_:enroll5 <enroll_date> "2024-04-02T12:15:00Z" .
+_:user3 <enrolled_in> _:enroll5 .
+
+_:enroll6 <dgraph.type> "Enrollment" .
+_:enroll6 <status> "completed" .
+_:enroll6 <grade> "10" .
+_:enroll6 <of_course> _:course1 .
+_:enroll6 <enroll_date> "2024-05-10T14:10:00Z" .
+_:user4 <enrolled_in> _:enroll6 .
+
+_:enroll7 <dgraph.type> "Enrollment" .
+_:enroll7 <status> "active" .
+_:enroll7 <of_course> _:course3 .
+_:enroll7 <enroll_date> "2024-05-15T11:00:00Z" .
+_:user4 <enrolled_in> _:enroll7 .
+
+_:enroll8 <dgraph.type> "Enrollment" .
+_:enroll8 <status> "completed" .
+_:enroll8 <grade> "8.8" .
+_:enroll8 <of_course> _:course2 .
+_:enroll8 <enroll_date> "2024-06-01T16:00:00Z" .
+_:user5 <enrolled_in> _:enroll8 .
+
+_:enroll9 <dgraph.type> "Enrollment" .
+_:enroll9 <status> "completed" .
+_:enroll9 <grade> "9.1" .
+_:enroll9 <of_course> _:course6 .
+_:enroll9 <enroll_date> "2024-06-20T10:30:00Z" .
+_:user5 <enrolled_in> _:enroll9 .
+
+
+# ---------- REVIEWS ----------
+_:review1 <dgraph.type> "Review" .
+_:review1 <comment> "Excelente curso y profesora." .
+_:review1 <rating> "9.5" .
+_:review1 <review_of> _:course1 .
+_:review1 <reviewed_by> _:user1 .
+
+_:review2 <dgraph.type> "Review" .
+_:review2 <comment> "Buen contenido pero poca práctica." .
+_:review2 <rating> "7.5" .
+_:review2 <review_of> _:course2 .
+_:review2 <reviewed_by> _:user2 .
+
+_:review3 <dgraph.type> "Review" .
+_:review3 <comment> "Me encantó el enfoque visual." .
+_:review3 <rating> "9" .
+_:review3 <review_of> _:course4 .
+_:review3 <reviewed_by> _:user3 .
+
+_:review4 <dgraph.type> "Review" .
+_:review4 <comment> "Muy técnico pero bien explicado." .
+_:review4 <rating> "8.8" .
+_:review4 <review_of> _:course3 .
+_:review4 <reviewed_by> _:user4 .
+
+_:review5 <dgraph.type> "Review" .
+_:review5 <comment> "Gran experiencia de aprendizaje." .
+_:review5 <rating> "10" .
+_:review5 <review_of> _:course5 .
+_:review5 <reviewed_by> _:user5 .

@@ -1,0 +1,129 @@
+{
+  "logging_info_by_user": [
+    {
+      "email": "ana.torres@example.com",
+      "name": "Ana Torres",
+      "action": "log_in",
+      "action_date": "2025-11-11T08:15:00"
+    },
+    {
+      "email": "ana.torres@example.com",
+      "name": "Ana Torres",
+      "action": "log_out",
+      "action_date": "2025-11-11T08:45:00"
+    },
+    {
+      "email": "luis.martinez@example.com",
+      "name": "Luis Martínez",
+      "action": "log_in",
+      "action_date": "2025-11-11T09:00:00"
+    },
+    {
+      "email": "luis.martinez@example.com",
+      "name": "Luis Martínez",
+      "action": "log_out",
+      "action_date": "2025-11-11T09:30:00"
+    },
+    {
+      "email": "mariana.rojas@example.com",
+      "name": "Mariana Rojas",
+      "action": "log_in",
+      "action_date": "2025-11-11T10:00:00"
+    },
+    {
+      "email": "mariana.rojas@example.com",
+      "name": "Mariana Rojas",
+      "action": "log_out",
+      "action_date": "2025-11-11T10:30:00"
+    },
+    {
+      "email": "oscar.diaz@example.com",
+      "name": "Óscar Díaz",
+      "action": "log_in",
+      "action_date": "2025-11-11T11:00:00"
+    },
+    {
+      "email": "oscar.diaz@example.com",
+      "name": "Óscar Díaz",
+      "action": "log_out",
+      "action_date": "2025-11-11T11:30:00"
+    },
+    {
+      "email": "abraham.mendez@example.com",
+      "name": "Abraham Méndez",
+      "action": "log_in",
+      "action_date": "2025-11-11T12:00:00"
+    },
+    {
+      "email": "abraham.mendez@example.com",
+      "name": "Abraham Méndez",
+      "action": "log_out",
+      "action_date": "2025-11-11T12:30:00"
+    }
+  ],
+  "course_info_by_status": [
+    {
+      "course_title": "Introducción a Python",
+      "email": "ana.torres@example.com",
+      "name": "Ana Torres",
+      "status": "active",
+      "grade": null
+    },
+    {
+      "course_title": "Diseño UX/UI Básico",
+      "email": "ana.torres@example.com",
+      "name": "Ana Torres",
+      "status": "completed",
+      "grade": 8.5
+    },
+    {
+      "course_title": "Bases de Datos NoSQL",
+      "email": "luis.martinez@example.com",
+      "name": "Luis Martínez",
+      "status": "completed",
+      "grade": 9.8
+    },
+    {
+      "course_title": "Fotografía Creativa",
+      "email": "luis.martinez@example.com",
+      "name": "Luis Martínez",
+      "status": "completed",
+      "grade": 7.9
+    },
+    {
+      "course_title": "Machine Learning Básico",
+      "email": "mariana.rojas@example.com",
+      "name": "Mariana Rojas",
+      "status": "active",
+      "grade": null
+    },
+    {
+      "course_title": "Introducción a Python",
+      "email": "oscar.diaz@example.com",
+      "name": "Óscar Díaz",
+      "status": "completed",
+      "grade": 10
+    },
+    {
+      "course_title": "Bases de Datos NoSQL",
+      "email": "oscar.diaz@example.com",
+      "name": "Óscar Díaz",
+      "status": "completed",
+      "grade": null
+    },
+    {
+      "course_title": "Diseño UX/UI Básico",
+      "email": "abraham.mendez@example.com",
+      "name": "Abraham Méndez",
+      "status": "completed",
+      "grade": 8.8
+    },
+    {
+      "course_title": "Animación Digital",
+      "email": "abraham.mendez@example.com",
+      "name": "Abraham Méndez",
+      "status": "completed",
+      "grade": 9.1
+    }
+  ]
+}

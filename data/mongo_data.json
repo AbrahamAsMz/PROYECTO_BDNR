@@ -1,0 +1,207 @@
+{
+  "users": [
+    {
+      "name": "admin",
+      "email": "admin",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "name": "Ana Torres",
+      "email": "ana.torres@example.com",
+      "password": "12345678",
+      "role": "student"
+    },
+    {
+      "name": "Luis Martínez",
+      "email": "luis.martinez@example.com",
+      "password": "12345678",
+      "role": "student"
+    },
+    {
+      "name": "Mariana Rojas",
+      "email": "mariana.rojas@example.com",
+      "password": "12345678",
+      "role": "student"
+    },
+    {
+      "name": "Óscar Díaz",
+      "email": "oscar.diaz@example.com",
+      "password": "12345678",
+      "role": "student"
+    },
+    {
+      "name": "Abraham Méndez",
+      "email": "abraham.mendez@example.com",
+      "password": "12345678",
+      "role": "student"
+    },
+    {
+      "name": "Carla Gómez",
+      "email": "carla.gomez@example.com",
+      "password": "12345678",
+      "role": "instructor"
+    },
+    {
+      "name": "Javier Rivera",
+      "email": "javier.rivera@example.com",
+      "password": "12345678",
+      "role": "instructor"
+    },
+    {
+      "name": "Luna Ortiz",
+      "email": "luna.ortiz@example.com",
+      "password": "12345678",
+      "role": "instructor"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Introducción a Python",
+      "category": "Programación",
+      "instructor_email": "carla.gomez@example.com"
+    },
+    {
+      "title": "Diseño UX/UI Básico",
+      "category": "Diseño",
+      "instructor_email": "javier.rivera@example.com"
+    },
+    {
+      "title": "Bases de Datos NoSQL",
+      "category": "Data",
+      "instructor_email": "carla.gomez@example.com"
+    },
+    {
+      "title": "Fotografía Creativa",
+      "category": "Arte",
+      "instructor_email": "luna.ortiz@example.com"
+    },
+    {
+      "title": "Machine Learning Básico",
+      "category": "Data",
+      "instructor_email": "carla.gomez@example.com"
+    },
+    {
+      "title": "Animación Digital",
+      "category": "Diseño",
+      "instructor_email": "javier.rivera@example.com"
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Intro a Python",
+      "course_title": "Introducción a Python",
+      "description": "Conceptos básicos de programación en Python.",
+      "url": "https://www.python.org/about/gettingstarted/"
+    },
+    {
+      "title": "What is UX/UI?",
+      "course_title": "Diseño UX/UI Básico",
+      "description": "Lectura introductoria sobre experiencia de usuario y diseño de interfaz.",
+      "url": "https://neoland.es/que-es-el-ux-ui-design/"
+    },
+    {
+      "title": "Intro to NoSQL",
+      "course_title": "Bases de Datos NoSQL",
+      "description": "Getting started with NoSQL concepts.",
+      "url": "https://www.mongodb.com/resources/basics/databases/nosql-explained"
+    },
+    {
+      "title": "Principios de Fotografía",
+      "course_title": "Fotografía Creativa",
+      "description": "Explora composición, luz y color en la fotografía.",
+      "url": "https://www.adobe.com/creativecloud/photography/discover/photography-basics.html"
+    },
+    {
+      "title": "ML for Beginners",
+      "course_title": "Machine Learning Básico",
+      "description": "Primeros pasos en aprendizaje automático.",
+      "url": "https://developers.google.com/machine-learning/crash-course"
+    },
+    {
+      "title": "Animación 2D con Blender",
+      "course_title": "Animación Digital",
+      "description": "Técnicas iniciales de animación digital en Blender.",
+      "url": "https://www.blender.org/features/animation/"
+    }
+  ],
+  "enrollments": [
+    {
+      "user_email": "ana.torres@example.com",
+      "course_title": "Introducción a Python",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "ana.torres@example.com",
+      "course_title": "Diseño UX/UI Básico",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "luis.martinez@example.com",
+      "course_title": "Bases de Datos NoSQL",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "luis.martinez@example.com",
+      "course_title": "Fotografía Creativa",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "mariana.rojas@example.com",
+      "course_title": "Machine Learning Básico",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "oscar.diaz@example.com",
+      "course_title": "Introducción a Python",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "oscar.diaz@example.com",
+      "course_title": "Bases de Datos NoSQL",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "abraham.mendez@example.com",
+      "course_title": "Diseño UX/UI Básico",
+      "enroll_date": "2025-11-12"
+    },
+    {
+      "user_email": "abraham.mendez@example.com",
+      "course_title": "Animación Digital",
+      "enroll_date": "2025-11-12"
+    }
+  ],
+  "reviews": [
+    {
+      "course_title": "Introducción a Python",
+      "username": "Ana Torres",
+      "comment": "Excelente curso y profesora.",
+      "rating": 9.5
+    },
+    {
+      "course_title": "Diseño UX/UI Básico",
+      "username": "Luis Martínez",
+      "comment": "Buen contenido pero poca práctica.",
+      "rating": 7.5
+    },
+    {
+      "course_title": "Fotografía Creativa",
+      "username": "Mariana Rojas",
+      "comment": "Me encantó el enfoque visual.",
+      "rating": 9
+    },
+    {
+      "course_title": "Bases de Datos NoSQL",
+      "username": "Óscar Díaz",
+      "comment": "Muy técnico pero bien explicado.",
+      "rating": 8.8
+    },
+    {
+      "course_title": "Machine Learning Básico",
+      "username": "Abraham Méndez",
+      "comment": "Gran experiencia de aprendizaje.",
+      "rating": 10
+    }
+  ]
+}
