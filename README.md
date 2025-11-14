@@ -9,7 +9,7 @@ Cassandra: Registra la actividad y el progreso de los estudiantes a lo largo del
   
 
 # DESCRIPCION 
-
+Aunque en teoria el main ya funciona en su mayoria, quedan unas cosas pendientes para que los datos nuevos que se inserten se agreguen a algunas bases de datos y que los archivos de datos base se actualicen, ademas de revisar que se cumplan todos los requerimientos, por si se nos hubiera pasado alguno. 
 
 # Archivos incluidos
 - `Cassandra/schema.cql`
