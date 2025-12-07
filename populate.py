@@ -34,7 +34,7 @@ try:
     mongo_db.enrollments.delete_many({})
     mongo_db.reviews.delete_many({})
 
-    # --- CREACIÓN DE ÍNDICES (NUEVO) ---
+    # --- CREACIÓN DE ÍNDICES ---
     print("Creando índices en MongoDB...")
     
     mongo_db.users.create_index([("email", pymongo.ASCENDING)], unique=True)
