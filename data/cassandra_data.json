@@ -1,129 +1,144 @@
 {
-  "logging_info_by_user": [
+  "logging_info_by_email": [
     {
-      "email": "ana.torres@example.com",
-      "name": "Ana Torres",
+      "user_id": "a1a1a1a1-a1a1-41a1-a1a1-a1a1a1a1a1a1",
+      "email": "juan.perez@iteso.mx",
+      "name": "Juan Pérez",
+      "role": "student",
       "action": "log_in",
-      "action_date": "2025-11-11T08:15:00"
+      "action_date": "2025-11-20T08:00:00"
     },
     {
-      "email": "ana.torres@example.com",
-      "name": "Ana Torres",
+      "user_id": "a1a1a1a1-a1a1-41a1-a1a1-a1a1a1a1a1a1",
+      "email": "juan.perez@iteso.mx",
+      "name": "Juan Pérez",
+      "role": "student",
       "action": "log_out",
-      "action_date": "2025-11-11T08:45:00"
+      "action_date": "2025-11-20T10:00:00"
     },
     {
-      "email": "luis.martinez@example.com",
-      "name": "Luis Martínez",
+      "user_id": "a2a2a2a2-a2a2-42a2-a2a2-a2a2a2a2a2a2",
+      "email": "sofia.lopez@iteso.mx",
+      "name": "Sofía López",
+      "role": "student",
       "action": "log_in",
-      "action_date": "2025-11-11T09:00:00"
+      "action_date": "2025-11-21T09:15:00"
     },
     {
-      "email": "luis.martinez@example.com",
-      "name": "Luis Martínez",
-      "action": "log_out",
-      "action_date": "2025-11-11T09:30:00"
-    },
-    {
-      "email": "mariana.rojas@example.com",
-      "name": "Mariana Rojas",
+      "user_id": "a3a3a3a3-a3a3-43a3-a3a3-a3a3a3a3a3a3",
+      "email": "diego.ramirez@iteso.mx",
+      "name": "Diego Ramírez",
+      "role": "student",
       "action": "log_in",
-      "action_date": "2025-11-11T10:00:00"
+      "action_date": "2025-11-22T14:00:00"
     },
     {
-      "email": "mariana.rojas@example.com",
-      "name": "Mariana Rojas",
+      "user_id": "a3a3a3a3-a3a3-43a3-a3a3-a3a3a3a3a3a3",
+      "email": "diego.ramirez@iteso.mx",
+      "name": "Diego Ramírez",
+      "role": "student",
       "action": "log_out",
-      "action_date": "2025-11-11T10:30:00"
+      "action_date": "2025-11-22T16:30:00"
     },
     {
-      "email": "oscar.diaz@example.com",
-      "name": "Óscar Díaz",
+      "user_id": "b1b1b1b1-b1b1-41b1-b1b1-b1b1b1b1b1b1",
+      "email": "roberto.casas@iteso.mx",
+      "name": "Dr. Roberto Casas",
+      "role": "instructor",
       "action": "log_in",
-      "action_date": "2025-11-11T11:00:00"
-    },
-    {
-      "email": "oscar.diaz@example.com",
-      "name": "Óscar Díaz",
-      "action": "log_out",
-      "action_date": "2025-11-11T11:30:00"
-    },
-    {
-      "email": "abraham.mendez@example.com",
-      "name": "Abraham Méndez",
-      "action": "log_in",
-      "action_date": "2025-11-11T12:00:00"
-    },
-    {
-      "email": "abraham.mendez@example.com",
-      "name": "Abraham Méndez",
-      "action": "log_out",
-      "action_date": "2025-11-11T12:30:00"
+      "action_date": "2025-11-20T07:50:00"
     }
   ],
   "course_info_by_status": [
     {
-      "course_title": "Introducción a Python",
-      "email": "ana.torres@example.com",
-      "name": "Ana Torres",
+      "user_id": "a1a1a1a1-a1a1-41a1-a1a1-a1a1a1a1a1a1",
+      "course_id": "c1c1c1c1-c1c1-41c1-c1c1-c1c1c1c1c1c1",
+      "course_title": "Programación Avanzada",
+      "email": "juan.perez@iteso.mx",
+      "name": "Juan Pérez",
+      "status": "completed",
+      "grade": 9.5
+    },
+    {
+      "user_id": "a1a1a1a1-a1a1-41a1-a1a1-a1a1a1a1a1a1",
+      "course_id": "c2c2c2c2-c2c2-42c2-c2c2-c2c2c2c2c2c2",
+      "course_title": "Inteligencia Artificial",
+      "email": "juan.perez@iteso.mx",
+      "name": "Juan Pérez",
       "status": "active",
       "grade": null
     },
     {
-      "course_title": "Diseño UX/UI Básico",
-      "email": "ana.torres@example.com",
-      "name": "Ana Torres",
+      "user_id": "a1a1a1a1-a1a1-41a1-a1a1-a1a1a1a1a1a1",
+      "course_id": "c5c5c5c5-c5c5-45c5-c5c5-c5c5c5c5c5c5",
+      "course_title": "Cálculo Integral",
+      "email": "juan.perez@iteso.mx",
+      "name": "Juan Pérez",
       "status": "completed",
-      "grade": 8.5
+      "grade": 5.5
     },
     {
-      "course_title": "Bases de Datos NoSQL",
-      "email": "luis.martinez@example.com",
-      "name": "Luis Martínez",
+      "user_id": "a2a2a2a2-a2a2-42a2-a2a2-a2a2a2a2a2a2",
+      "course_id": "c3c3c3c3-c3c3-43c3-c3c3-c3c3c3c3c3c3",
+      "course_title": "Diseño Gráfico Digital",
+      "email": "sofia.lopez@iteso.mx",
+      "name": "Sofía López",
+      "status": "completed",
+      "grade": 10.0
+    },
+    {
+      "user_id": "a2a2a2a2-a2a2-42a2-a2a2-a2a2a2a2a2a2",
+      "course_id": "c4c4c4c4-c4c4-44c4-c4c4-c4c4c4c4c4c4",
+      "course_title": "Historia del Arte",
+      "email": "sofia.lopez@iteso.mx",
+      "name": "Sofía López",
+      "status": "active",
+      "grade": null
+    },
+    {
+      "user_id": "a3a3a3a3-a3a3-43a3-a3a3-a3a3a3a3a3a3",
+      "course_id": "c1c1c1c1-c1c1-41c1-c1c1-c1c1c1c1c1c1",
+      "course_title": "Programación Avanzada",
+      "email": "diego.ramirez@iteso.mx",
+      "name": "Diego Ramírez",
       "status": "completed",
       "grade": 9.8
     },
     {
-      "course_title": "Fotografía Creativa",
-      "email": "luis.martinez@example.com",
-      "name": "Luis Martínez",
+      "user_id": "a3a3a3a3-a3a3-43a3-a3a3-a3a3a3a3a3a3",
+      "course_id": "c5c5c5c5-c5c5-45c5-c5c5-c5c5c5c5c5c5",
+      "course_title": "Cálculo Integral",
+      "email": "diego.ramirez@iteso.mx",
+      "name": "Diego Ramírez",
       "status": "completed",
-      "grade": 7.9
+      "grade": 4.0
     },
     {
-      "course_title": "Machine Learning Básico",
-      "email": "mariana.rojas@example.com",
-      "name": "Mariana Rojas",
+      "user_id": "a4a4a4a4-a4a4-44a4-a4a4-a4a4a4a4a4a4",
+      "course_id": "c3c3c3c3-c3c3-43c3-c3c3-c3c3c3c3c3c3",
+      "course_title": "Diseño Gráfico Digital",
+      "email": "valentina.fernandez@iteso.mx",
+      "name": "Valentina Fernández",
       "status": "active",
       "grade": null
     },
     {
-      "course_title": "Introducción a Python",
-      "email": "oscar.diaz@example.com",
-      "name": "Óscar Díaz",
+      "user_id": "a4a4a4a4-a4a4-44a4-a4a4-a4a4a4a4a4a4",
+      "course_id": "c5c5c5c5-c5c5-45c5-c5c5-c5c5c5c5c5c5",
+      "course_title": "Cálculo Integral",
+      "email": "valentina.fernandez@iteso.mx",
+      "name": "Valentina Fernández",
       "status": "completed",
-      "grade": 10
+      "grade": 7.0
     },
     {
-      "course_title": "Bases de Datos NoSQL",
-      "email": "oscar.diaz@example.com",
-      "name": "Óscar Díaz",
+      "user_id": "a5a5a5a5-a5a5-45a5-a5a5-a5a5a5a5a5a5",
+      "course_id": "c5c5c5c5-c5c5-45c5-c5c5-c5c5c5c5c5c5",
+      "course_title": "Cálculo Integral",
+      "email": "carlos.ruiz@iteso.mx",
+      "name": "Carlos Ruiz",
       "status": "completed",
-      "grade": null
-    },
-    {
-      "course_title": "Diseño UX/UI Básico",
-      "email": "abraham.mendez@example.com",
-      "name": "Abraham Méndez",
-      "status": "completed",
-      "grade": 8.8
-    },
-    {
-      "course_title": "Animación Digital",
-      "email": "abraham.mendez@example.com",
-      "name": "Abraham Méndez",
-      "status": "completed",
-      "grade": 9.1
+      "grade": 5.9
     }
   ]
 }

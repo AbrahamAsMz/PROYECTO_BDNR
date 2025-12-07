@@ -1,15 +1,17 @@
+// Este archivo solo muestra los indices que se implementaron en mongo, los
+// indices no se cargan desde este archivo, se cargan desde las lineas 
+// agregadas en el populate.py
 
-//Usuarios: índice único por email
+use learnlink; 
+
 db.users.createIndex({ email: 1 }, { unique: true });
+db.users.createIndex({ user_uuid: 1 }, { unique: true }); 
 
-//Cursos: índice de texto para búsquedas por título y categoría
 db.courses.createIndex({ title: "text", category: "text" });
+db.courses.createIndex({ course_uuid: 1 }, { unique: true });
 
-//Lecciones: índice para buscar por título y curso
 db.lessons.createIndex({ title: "text", course_title: 1 });
 
-//Inscripciones: índice único para que un usuario no se inscriba dos veces en el mismo curso
-db.enrollments.createIndex({ email: 1, course_title: 1 }, { unique: true });
+db.enrollments.createIndex({ user_email: 1, course_title: 1 }, { unique: true });
 
-//Reseñas: índice para filtrar rápidamente reseñas por curso y usuario
 db.reviews.createIndex({ course_title: 1, username: 1 });

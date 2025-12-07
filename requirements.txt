@@ -1,20 +1,15 @@
-cassandra-driver==3.29.2
-certifi==2025.11.12
-charset-normalizer==3.4.4
-click==8.3.0
-dnspython==2.8.0
-geomet==0.2.1.post1
-grpcio==1.76.0
-idna==3.11
-numpy==1.26.4
-pandas==2.2.2
-protobuf==3.20.3
-pydgraph==21.3.2
-pymongo==4.8.0
-python-dateutil==2.9.0.post0
-pytz==2025.2
-requests==2.32.3
-six==1.17.0
-typing_extensions==4.15.0
-tzdata==2025.2
-urllib3==2.5.0
+# --- Bases de Datos ---
+pymongo>=4.8.0
+cassandra-driver>=3.29.2
+pydgraph>=21.3.2
+
+# --- Análisis y Utilidades ---
+pandas>=2.2.2
+numpy>=1.26.4
+requests>=2.32.3
+tabulate
+
+# --- Fixes para Mac M1 / Apple Silicon ---
+# Forzamos versiones modernas de gRPC y Protobuf para evitar lentitud
+grpcio>=1.60.0
+protobuf>=4.21.0

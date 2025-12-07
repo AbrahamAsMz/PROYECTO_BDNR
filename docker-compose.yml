@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: mongo:latest
+    ports: ["27017:27017"]
+
+  cassandra:
+    image: cassandra:latest
+    ports: ["9042:9042"]
+
+  dgraph:
+    image: dgraph/standalone:latest
+    ports: ["8080:8080", "9080:9080"]

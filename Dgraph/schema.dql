@@ -1,30 +1,20 @@
-# ---------- PREDICADOS ----------
-# Strings y tipos básicos
+
 name: string @index(term) .
 email: string @index(exact) .
 role: string @index(exact) .
-
 title: string @index(term) .
 category: string @index(term) .
-
-# Review / comentario
 comment: string .
 rating: float @index(float) .
-
-# Enrollment / grade / status
 status: string @index(exact) .
 grade: float @index(float) .
 enroll_date: datetime @index(hour) .
+teaches: [uid] @reverse .         
+enrolled_in: [uid] @reverse .  
+of_course: uid @reverse .     
+review_of: uid @reverse .      
+reviewed_by: uid @reverse .      
 
-# Relaciones (UID)
-teaches: uid @reverse .         # Instructor -> Course
-has_enrollment: uid @reverse .  # Course -> Enrollment
-enrolled_in: uid @reverse .     # User -> Enrollment
-of_course: uid @reverse .       # Enrollment -> Course
-review_of: uid @reverse .       # Review -> Course
-reviewed_by: uid @reverse .     # Review -> User
-
-# ---------- TYPE DEFINITIONS ----------
 type User {
   name
   email
@@ -37,7 +27,6 @@ type Course {
   title
   category
   teaches
-  has_enrollment
   dgraph.type
 }
 

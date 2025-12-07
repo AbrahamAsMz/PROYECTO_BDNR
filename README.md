@@ -1,4 +1,4 @@
-#Hola profe, ya creanos
+
 # PROYECTO 
 
 Plataforma de Educación en Línea - Learnlink
@@ -9,7 +9,7 @@ Cassandra: Registra la actividad y el progreso de los estudiantes a lo largo del
   
 
 # DESCRIPCION 
-Aunque en teoria el main ya funciona en su mayoria, quedan unas cosas pendientes para que los datos nuevos que se inserten se agreguen a algunas bases de datos y que los archivos de datos base se actualicen, ademas de revisar que se cumplan todos los requerimientos, por si se nos hubiera pasado alguno. 
+
 
 # Archivos incluidos
 - `Cassandra/schema.cql`
@@ -28,5 +28,31 @@ Aunque en teoria el main ya funciona en su mayoria, quedan unas cosas pendientes
 
 # INTEGRANTES EQUIPO 4
 
-Oscar Abraham Ascencio Muñoz - 737468
-Sarah Martinez Mora - 740366
+Oscar Abraham Ascencio Muñoz 
+Sarah Martinez Mora 
+
+
+# COMANDOS PARA CORRER EL PROGRAMA
+
+# 1. Iniciar Entorno 
+docker-compose down -v
+docker-compose up -d
+# 2. Cargar esquema cassandra
+docker cp ./Cassandra/schema.cql proyectoedtech-cassandra-1:/tmp/schema.cql
+docker exec -i proyectoedtech-cassandra-1 cqlsh -f /tmp/schema.cql 
+# 3. Poblar Bases de Datos 
+python populate.py
+# 4. Ejecutar Aplicación
+python main.py
+
+# CASOS DE USO 
+
+# Administrador
+usuario: admin
+contraseña: 1234
+# Instructor
+usuario: carla.gomez@example.com
+contraseña: 12345678
+# Alumno
+usuario: ana.torres@example.com
+contraseña: 12345678
