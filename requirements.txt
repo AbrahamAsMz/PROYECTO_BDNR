@@ -9,7 +9,6 @@ numpy>=1.26.4
 requests>=2.32.3
 tabulate
 
-# --- Fixes para Mac M1 / Apple Silicon ---
-# Forzamos versiones modernas de gRPC y Protobuf para evitar lentitud
+
 grpcio>=1.60.0
 protobuf>=4.21.0
